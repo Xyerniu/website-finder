@@ -118,7 +118,6 @@ def stop():
 
 root = tk.Tk()
 # non variable gui stuff
-test = tk.PhotoImage(file="images/test.png")
 
 
 canvas = tk.Canvas(root, height=700, width=700)
@@ -199,7 +198,7 @@ check3.place(relx=0.50, rely=0.6, relwidth=0.25, relheight=0.075)
 check4 = tk.Checkbutton(frame, text="rng numbers", fg="green", bg="#263D42", variable=v3, command=lambda: set_bool())
 check4.place(relx=0.25, rely=0.6, relwidth=0.25, relheight=0.075)
 
-check5 = tk.Checkbutton(frame, image=test, text="rng symbols", fg="green", bg="#263D42", variable=v4,
+check5 = tk.Checkbutton(frame, text="rng symbols", fg="green", bg="#263D42", variable=v4,
                         command=lambda: set_bool())
 check5.place(relx=0, rely=0.6, relwidth=0.25, relheight=0.075)
 
